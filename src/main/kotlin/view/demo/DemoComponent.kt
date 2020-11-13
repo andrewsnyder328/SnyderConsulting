@@ -4,15 +4,35 @@ import mvp.BaseState
 import mvp.BaseView
 import react.RBuilder
 import react.RProps
+import util.addText
+import util.setProps
 import view.components.ComponentBuilderArgs
 import view.components.handler
-import view.components.material_ui.Card
+import view.components.material_ui.Box
+import view.components.material_ui.Button
+import view.components.material_ui.ButtonGroup
 
 class DemoViewComponent : BaseView<RProps, DemoViewState>(), IDemoView {
     override fun RBuilder.render() {
-        +"Hello World"
-        Card {
-            +"This is a card"
+        Box {
+            setProps {
+                width = "100%"
+                height = "60px"
+                justifyContent = "center"
+            }
+            addText("Snyder Consulting")
+
+            ButtonGroup {
+                Button {
+                    addText("One")
+                }
+                Button {
+                    addText("Two")
+                }
+                Button {
+                    addText("Three")
+                }
+            }
         }
     }
 }

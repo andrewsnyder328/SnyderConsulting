@@ -7,4 +7,3 @@ pluginManagement {
     
 }
 rootProject.name = "kotlin-react-mvp-template"
-
