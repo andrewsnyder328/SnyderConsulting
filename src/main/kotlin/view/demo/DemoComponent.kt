@@ -4,34 +4,34 @@ import mvp.BaseState
 import mvp.BaseView
 import react.RBuilder
 import react.RProps
+import react.dom.style
 import util.addText
 import util.setProps
 import view.components.ComponentBuilderArgs
+import view.components.chakra.Box
+import view.components.chakra.Text
 import view.components.handler
-import view.components.material_ui.Box
-import view.components.material_ui.Button
-import view.components.material_ui.ButtonGroup
 
 class DemoViewComponent : BaseView<RProps, DemoViewState>(), IDemoView {
     override fun RBuilder.render() {
         Box {
             setProps {
+                bg = "gray"
                 width = "100%"
                 height = "60px"
-                justifyContent = "center"
+                alignItems = "center"
+                display = "flex"
             }
-            addText("Snyder Consulting")
-
-            ButtonGroup {
-                Button {
-                    addText("One")
+            style {
+                this.setProp("background-color", "gray")
+            }
+            Text {
+                setProps {
+                    color = "white"
+                    fontSize = "24px"
+                    marginLeft = "24px"
                 }
-                Button {
-                    addText("Two")
-                }
-                Button {
-                    addText("Three")
-                }
+                addText("Snyder Consulting")
             }
         }
     }

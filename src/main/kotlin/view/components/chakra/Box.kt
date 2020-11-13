@@ -1,7 +1,7 @@
-@file:JsModule("@material-ui/core")
+@file:JsModule("@chakra-ui/react")
 @file:JsNonModule
 
-package view.components.material_ui
+package view.components.chakra
 
 import react.RClass
 import react.RProps

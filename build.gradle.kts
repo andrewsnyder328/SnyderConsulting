@@ -27,6 +27,12 @@ dependencies {
     implementation(npm("react-share", "latest"))
     implementation(npm("axios", "latest"))
     implementation(npm("@material-ui/core", "latest"))
+
+    implementation(npm("@chakra-ui/react", "latest"))
+    implementation(npm("@emotion/react", "latest"))
+    implementation(npm("@emotion/styled", "latest"))
+    implementation(npm("framer-motion", "latest"))
+
 }
 
 kotlin {
