@@ -25,6 +25,6 @@ open class BaseView<P : RProps, S : BaseState> : RComponent<P, S>(), IBaseView {
     }
 }
 
-interface BaseState : RState {
+external interface BaseState : RState {
     var loading: Boolean
 }

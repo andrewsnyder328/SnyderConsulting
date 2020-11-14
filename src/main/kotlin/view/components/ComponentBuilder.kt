@@ -9,7 +9,7 @@ import react.RProps
 typealias ComponentBuilderArgs <P> = (
     optionalProps: (dynamic.() -> Unit) -> Unit,
     children: (RBuilder.() -> dynamic) -> Unit
-) -> P
+) -> P?
 
 fun <P : RProps> RElementBuilder<P>.handler(block: ComponentBuilderArgs<P>) {
 
@@ -23,7 +23,7 @@ fun <P : RProps> RElementBuilder<P>.handler(block: ComponentBuilderArgs<P>) {
 
     val result = block(::onOptionalProps, ::onChildren)
 
-    result.asJsObject().getOwnPropertyNames().forEach {
+    result?.asJsObject()?.getOwnPropertyNames()?.forEach {
         attrs.asDynamic()[it] = result.asDynamic()[it]
     }
 }

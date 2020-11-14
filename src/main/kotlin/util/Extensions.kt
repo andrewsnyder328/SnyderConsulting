@@ -25,10 +25,10 @@ fun RElementBuilder<RProps>.setProps(block: dynamic.() -> Unit) {
     block(this.attrs.asDynamic())
 }
 
-val RElementBuilder<RProps>.props: dynamic
-    get() {
-        return this.attrs.asDynamic()
-    }
+//val RElementBuilder<RProps>.props: dynamic
+//    get() {
+//        return this.attrs.asDynamic()
+//    }
 
 fun <T : Tag> RDOMBuilder<T>.setOnClickListener(block: (Event) -> Unit) {
     if (attrs is HtmlBlockInlineTag) {
