@@ -7,14 +7,16 @@ import view.components.chakra.Box
 import view.components.chakra.Stack
 import view.components.chakra.Text
 
-fun RBuilder.header() {
+fun RBuilder.header(page: TabName) {
     Stack {
         setProps {
             isInline = true
             spacing = "0px"
         }
         leftSideHeader()
-        navBarHeader()
+        navBarHeader { optionalProps, children ->
+            NavBarHeaderProps(page)
+        }
         rightSideHeader()
     }
 }
@@ -40,13 +42,13 @@ fun RBuilder.leftSideHeader() {
     }
 }
 
-enum class TabName(val value: String) {
-    HOME("Home"),
-    SERVICES("Services"),
-    HIRE_ME("Hire Me"),
-    BLOG("Blog"),
-    CONTACT("Contact"),
-    ABOUT("About")
+enum class TabName(val display: String, val route: String) {
+    HOME("Home", ""),
+    SERVICES("Services", "services"),
+    HIRE_ME("Hire Me", "hire-me"),
+    BLOG("Blog", "blog"),
+    CONTACT("Contact", "contact"),
+    ABOUT("About", "about")
 }
 
 fun RBuilder.rightSideHeader() {

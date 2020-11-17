@@ -1,5 +1,6 @@
 package view.components.header
 
+import kotlinx.browser.window
 import mvp.BaseState
 import mvp.BaseView
 import react.RBuilder
@@ -11,16 +12,20 @@ import view.components.chakra.Box
 import view.components.chakra.Stack
 import view.components.handler
 
-class NavBarHeader : BaseView<RProps, NavBarHeaderState>() {
+class NavBarHeader : BaseView<NavBarHeaderProps, NavBarHeaderState>() {
 
     override fun NavBarHeaderState.init() {
         selectedTab = TabName.HOME
     }
 
-    private fun tabChanged(tab: TabName) {
+    override fun componentDidMount() {
         setState {
-            selectedTab = tab
+            selectedTab = props.page
         }
+    }
+
+    private fun tabChanged(tab: TabName) {
+        window.location.replace("/#/${tab.route}")
     }
 
     override fun RBuilder.render() {
@@ -50,7 +55,7 @@ class NavBarHeader : BaseView<RProps, NavBarHeaderState>() {
 }
 
 data class NavBarHeaderProps(
-    val empty: String? = null
+    val page: TabName
 ) : RProps
 
 external interface NavBarHeaderState : BaseState {

@@ -33,7 +33,7 @@ class Tab : BaseView<TabProps, BaseState>() {
                     paddingTop = "10px"
                 }
                 Text {
-                    addText(props.tab.value)
+                    addText(props.tab.display)
                 }
             }
             Box {
