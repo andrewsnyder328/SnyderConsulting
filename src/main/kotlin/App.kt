@@ -11,7 +11,7 @@ class App : RComponent<RProps, RState>() {
     override fun RBuilder.render() {
         hashRouter {
             switch {
-                route("/", HomeView::class, exact = true)
+                route("/", HomeView::class, exact = false)
                 route("/services", ServicesView::class, exact = true)
                 route("/hire-me", HireMeView::class, exact = true)
                 route("/blog", BlogView::class, exact = true)
