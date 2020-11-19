@@ -24,7 +24,7 @@ fun RBuilder.header(page: TabName) {
 fun RBuilder.leftSideHeader() {
     Box {
         setProps {
-            bg = "#E5E5E5"
+            bg = "#DEE6F0"
             width = "100%"
             height = "88px"
             alignItems = "center"
@@ -54,7 +54,7 @@ enum class TabName(val display: String, val route: String) {
 fun RBuilder.rightSideHeader() {
     Box {
         setProps {
-            bg = "#E5E5E5"
+            bg = "#DEE6F0"
             width = "100%"
             height = "88px"
             alignItems = "center"
