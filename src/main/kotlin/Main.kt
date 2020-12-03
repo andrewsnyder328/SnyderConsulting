@@ -5,7 +5,7 @@ import view.components.chakra.CSSReset
 
 fun main() {
     window.onload = {
-        document.documentElement?.setAttribute("style", "height: 100%")
+        document.body?.style?.height = "100vh"
         document.body?.style?.backgroundImage = "linear-gradient(#CAD1DA, #E2EFFF)"
         render(document.getElementById("root")) {
             CSSReset {}
