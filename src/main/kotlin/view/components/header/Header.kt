@@ -30,6 +30,7 @@ fun RBuilder.leftSideHeader() {
             alignItems = "center"
             justifyContent = "center"
             display = "flex"
+            boxShadow = "0px 0px 4px 0px #ccb8b8"
         }
         Text {
             setProps {
@@ -60,6 +61,7 @@ fun RBuilder.rightSideHeader() {
             alignItems = "center"
             justifyContent = "center"
             display = "flex"
+            boxShadow = "0px 0px 4px 0px #ccb8b8"
         }
         Stack {
             setProps {

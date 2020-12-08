@@ -34,7 +34,8 @@ class NavBarHeader : BaseView<NavBarHeaderProps, NavBarHeaderState>() {
             setProps {
                 bg = "white"
                 height = "94px"
-                boxShadow = "0px 1px 4px 0px #ccb8b8"
+                boxShadow = "0px 1px 4px 1px #ccb8b8"
+                zIndex = 2
             }
             Stack {
                 setProps {
