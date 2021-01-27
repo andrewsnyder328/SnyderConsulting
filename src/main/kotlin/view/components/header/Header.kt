@@ -34,18 +34,18 @@ fun RBuilder.leftSideHeader() {
         }
         Text {
             setProps {
-                fontSize = "36px"
-                marginLeft = "24px"
+                fontSize = "24px"
                 fontWeight = "bold"
             }
-            addText("Snyder Consulting")
+            addText("Snyder Consulting, LLC")
         }
     }
 }
 
 enum class TabName(val display: String, val route: String) {
     HOME("Home", ""),
-    SERVICES("Services", "services"),
+
+    //    SERVICES("Services", "services"),
     HIRE_ME("Hire Me", "hire-me"),
     BLOG("Blog", "blog"),
     CONTACT("Contact", "contact"),
@@ -62,24 +62,6 @@ fun RBuilder.rightSideHeader() {
             justifyContent = "center"
             display = "flex"
             boxShadow = "0px 0px 4px 0px #ccb8b8"
-        }
-        Stack {
-            setProps {
-                spacing = "0px"
-                alignItems = "flex-end"
-            }
-            Text {
-                setProps {
-                    fontSize = "24px"
-                }
-                addText("701.770.9530")
-            }
-            Text {
-                setProps {
-                    fontSize = "24px"
-                }
-                addText("andrew@snyderconsulting.tech")
-            }
         }
     }
 }
