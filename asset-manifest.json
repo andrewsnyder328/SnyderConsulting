@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/SnyderConsulting/static/js/main.e3a141eb.chunk.js",
-    "main.js.map": "/SnyderConsulting/static/js/main.e3a141eb.chunk.js.map",
-    "runtime-main.js": "/SnyderConsulting/static/js/runtime-main.2853fbeb.js",
-    "runtime-main.js.map": "/SnyderConsulting/static/js/runtime-main.2853fbeb.js.map",
-    "static/js/2.54c21e83.chunk.js": "/SnyderConsulting/static/js/2.54c21e83.chunk.js",
-    "static/js/2.54c21e83.chunk.js.map": "/SnyderConsulting/static/js/2.54c21e83.chunk.js.map",
-    "static/js/3.8d72ff03.chunk.js": "/SnyderConsulting/static/js/3.8d72ff03.chunk.js",
-    "static/js/3.8d72ff03.chunk.js.map": "/SnyderConsulting/static/js/3.8d72ff03.chunk.js.map",
-    "index.html": "/SnyderConsulting/index.html",
-    "static/js/2.54c21e83.chunk.js.LICENSE.txt": "/SnyderConsulting/static/js/2.54c21e83.chunk.js.LICENSE.txt"
+    "main.js": "/static/js/main.e3a141eb.chunk.js",
+    "main.js.map": "/static/js/main.e3a141eb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ab0a9ebb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ab0a9ebb.js.map",
+    "static/js/2.54c21e83.chunk.js": "/static/js/2.54c21e83.chunk.js",
+    "static/js/2.54c21e83.chunk.js.map": "/static/js/2.54c21e83.chunk.js.map",
+    "static/js/3.8d72ff03.chunk.js": "/static/js/3.8d72ff03.chunk.js",
+    "static/js/3.8d72ff03.chunk.js.map": "/static/js/3.8d72ff03.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.54c21e83.chunk.js.LICENSE.txt": "/static/js/2.54c21e83.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2853fbeb.js",
+    "static/js/runtime-main.ab0a9ebb.js",
     "static/js/2.54c21e83.chunk.js",
     "static/js/main.e3a141eb.chunk.js"
   ]
